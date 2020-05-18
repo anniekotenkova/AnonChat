@@ -1,0 +1,21 @@
+%h2.text
+  Мэтчи собеседников
+  %br
+  %small
+    = link_to 'Начать новую беседу', new_chat_room_path, class: 'btn btn-primary btn-sx'
+
+%table.table.table-hover
+  %thead
+    %tr
+      %th Название (эмодзи)
+      %th Дата
+      %th
+  %tbody
+    - @chat_rooms.each do |chat_room|
+      %tr
+        %td
+          = chat_room.title
+        %td
+          = chat_room.created_at
+        %td
+          = link_to "Продолжить беседу", chat_room_path(chat_room), class: "btn btn-sm btn-primary"
