@@ -53,7 +53,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'react-rails', '~> 1.11'
 gem 'devise', '~> 4.2', '>= 4.2.1'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.3.1'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'active_model_serializers', '~> 0.10.5'
 gem 'virtus', '~> 1.0', '>= 1.0.5'
