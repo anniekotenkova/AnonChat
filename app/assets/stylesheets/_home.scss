@@ -36,6 +36,13 @@
   justify-content: flex-end;
 }
 
+.basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
 .welcomeText {
   display: flex;
   width: 38.75%;
@@ -65,6 +72,48 @@
     .formButton:hover {
       background-color: #1B1B22;
     }
-
   }
+
+  .timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .identifyEmoji {
+      margin-right: 22px;
+      width: 79px;
+      height: 79px;
+      background-color: #FFEAEE;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+    }
+
+    .countdown {
+      width: 95px;
+
+      p {
+        margin: 0;
+      }
+
+      .time {
+        font-size: 60px;
+        font-weight: 500;
+        color: $SecondaryColor;
+      }
+
+      .sign {
+        font-size: 16px;
+        color: rgba(20, 20, 20, 0.6);
+      }
+    }
+  }
+
 }

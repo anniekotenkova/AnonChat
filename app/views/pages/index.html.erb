@@ -11,11 +11,20 @@
     <% end %>
   </div>
 </div>
-<section class="welcomeText">
+<section class="basic">
+ <div class="welcomeText">
+   <div class="timer">
+     <div class="identifyEmoji"><%= image_tag ( "calmdown.png") %></div>
+     <div class="countdown">
+       <p class="time">00:00</p>
+       <p class="sign">Осталось</p>
+     </div>
+   </div>
 
-  <h2>Ваша беседа закончена. <br> Хотите продолжить общаться?</h2>
+   <h2>Ваша беседа закончена. <br> Хотите продолжить общаться?</h2>
 
-  <div class="actions">
-     <%= link_to 'Начать новую беседу!', channels_path , class: "formButton"%>
-  </div>
+   <div class="actions">
+      <%= link_to 'Начать новую беседу!', channels_path , class: "formButton"%>
+   </div>
+ </div>
 </section>

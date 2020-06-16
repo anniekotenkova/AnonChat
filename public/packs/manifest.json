@@ -28,17 +28,17 @@
         "/packs/js/hello_react-029650460b9e200204d2.js.map"
       ]
     },
-    "timeroff": {
+    "timeoff": {
       "js": [
-        "/packs/js/timeroff-b0b064cc614b570e93a7.js"
+        "/packs/js/timeoff-fff91162b6de29ebe433.js"
       ],
       "js.map": [
-        "/packs/js/timeroff-b0b064cc614b570e93a7.js.map"
+        "/packs/js/timeoff-fff91162b6de29ebe433.js.map"
       ]
     }
   },
   "hello_react.js": "/packs/js/hello_react-029650460b9e200204d2.js",
   "hello_react.js.map": "/packs/js/hello_react-029650460b9e200204d2.js.map",
-  "timeroff.js": "/packs/js/timeroff-b0b064cc614b570e93a7.js",
-  "timeroff.js.map": "/packs/js/timeroff-b0b064cc614b570e93a7.js.map"
+  "timeoff.js": "/packs/js/timeoff-fff91162b6de29ebe433.js",
+  "timeoff.js.map": "/packs/js/timeoff-fff91162b6de29ebe433.js.map"
 }

@@ -18,8 +18,12 @@
 @import '_home';
 @import '_normalize';
 
-body {
-  font-family: 'PT Russia Text', sans-serif;
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'PT Russia Text', sans-serif;
 }
 
 .animate-in {
