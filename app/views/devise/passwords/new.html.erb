@@ -1,16 +1,20 @@
-<h2>Forgot your password?</h2>
+<div class='backgroundPage'>
+  <div class='form passwordForgot'>
+    <h2>Забыли пароль?</h2>
+    <p>Введите свой email, а мы пришлем инструкции по восстановлению пароля.</p>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "formControl" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Отправить", class: "formButton" %>
+      </div>
+    <% end %>
+
+    <div class="links"><%= link_to "Войти", new_session_path(resource_name) %> или <%= link_to "Зарегистрироваться", new_registration_path(resource_name) %></div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>

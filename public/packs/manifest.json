@@ -1,0 +1,44 @@
+{
+  "application.js": "/packs/js/application-a9d1dd230559f4ac124f.js",
+  "application.js.map": "/packs/js/application-a9d1dd230559f4ac124f.js.map",
+  "chat.js": "/packs/js/chat-91bd2b7583feb6813948.js",
+  "chat.js.map": "/packs/js/chat-91bd2b7583feb6813948.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-a9d1dd230559f4ac124f.js"
+      ],
+      "js.map": [
+        "/packs/js/application-a9d1dd230559f4ac124f.js.map"
+      ]
+    },
+    "chat": {
+      "js": [
+        "/packs/js/chat-91bd2b7583feb6813948.js"
+      ],
+      "js.map": [
+        "/packs/js/chat-91bd2b7583feb6813948.js.map"
+      ]
+    },
+    "hello_react": {
+      "js": [
+        "/packs/js/hello_react-029650460b9e200204d2.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_react-029650460b9e200204d2.js.map"
+      ]
+    },
+    "timeroff": {
+      "js": [
+        "/packs/js/timeroff-b0b064cc614b570e93a7.js"
+      ],
+      "js.map": [
+        "/packs/js/timeroff-b0b064cc614b570e93a7.js.map"
+      ]
+    }
+  },
+  "hello_react.js": "/packs/js/hello_react-029650460b9e200204d2.js",
+  "hello_react.js.map": "/packs/js/hello_react-029650460b9e200204d2.js.map",
+  "timeroff.js": "/packs/js/timeroff-b0b064cc614b570e93a7.js",
+  "timeroff.js.map": "/packs/js/timeroff-b0b064cc614b570e93a7.js.map"
+}

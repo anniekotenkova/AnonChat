@@ -1,0 +1,70 @@
+@import '_mixins';
+@import '_styles';
+@import '_normalize';
+
+
+.header {
+  margin: 25px 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    img {
+      width: 110px;
+    }
+  }
+
+  .widget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: $PrimaryColor;
+      font-family: 'PT Russia Text Medium', sans-serif;
+      margin-right: 4px;
+    }
+
+    // a:hover {
+    //   color: $SecondaryColor;
+    // }
+  }
+}
+
+.header.inMessenger {
+  justify-content: flex-end;
+}
+
+.welcomeText {
+  display: flex;
+  width: 38.75%;
+  margin: 0 auto;
+  flex-direction: column;
+
+  h2 {
+    @include header;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+
+  .actions {
+    margin-top: 54px;
+
+    .formButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include formButton;
+      margin: 0;
+      transition: 0.3s;
+    }
+
+    .formButton:hover {
+      background-color: #1B1B22;
+    }
+
+  }
+}

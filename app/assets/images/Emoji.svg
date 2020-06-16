@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Add Emoji</title>
+    <g id="#13---Direct-Messaging" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="#2" transform="translate(-842.000000, -947.000000)" fill="#096B72" fill-rule="nonzero">
+            <g id="Send-Message-2" transform="translate(60.000000, 919.000000)">
+                <g id="Send-Message">
+                    <g id="Stacked-Group" transform="translate(782.468900, 16.000000)">
+                        <g id="Add-Emoji" transform="translate(0.000000, 12.000000)">
+                            <path d="M12,0 C5.4,0 0,5.4 0,12 C0,18.6 5.4,24 12,24 C18.6,24 24,18.6 24,12 C24,5.4 18.6,0 12,0 Z M16.2,7.2 C17.16,7.2 18,8.04 18,9 C18,9.96 17.16,10.8 16.2,10.8 C15.24,10.8 14.4,9.96 14.4,9 C14.4,8.04 15.24,7.2 16.2,7.2 Z M7.8,7.2 C8.76,7.2 9.6,8.04 9.6,9 C9.6,9.96 8.76,10.8 7.8,10.8 C6.84,10.8 6,9.96 6,9 C6,8.04 6.84,7.2 7.8,7.2 Z M12,19.2 C8.88,19.2 6.24,17.16 5.28,14.4 L18.72,14.4 C17.76,17.16 15.12,19.2 12,19.2 Z" id="Smiles"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

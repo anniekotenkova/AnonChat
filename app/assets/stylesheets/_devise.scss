@@ -1,0 +1,61 @@
+@import '_mixins';
+@import '_styles';
+@import '_normalize';
+
+/* SIGNUP/IN */
+.backgroundPage {
+  position: absolute;
+  z-index: 1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(146deg, rgba(255,255,255,1) 0%,
+  rgba(248,248,248,1) 81%, rgba(255,255,255,1) 100%);
+}
+
+.form {
+ margin: auto;
+ width: 388px;
+ border-radius: 35px;
+ padding: 30px 40px;
+ text-align: center;
+ background-color: white;
+ box-shadow: 6px 6px 30px rgba(222, 222, 222, 0.3),
+            -10px -10px 30px #FFFFFF;
+ margin-top: 100px;
+
+ h2 {
+   @include header;
+   margin: 0 0 10px 0;
+ }
+
+ p {
+   font-size: 16px;
+   margin-bottom: 37px;
+ }
+
+ a {
+   color: $SecondaryColor;
+ }
+
+ .formControl {
+     @include formControl;
+ }
+
+
+ .formButton {
+   @include formButton;
+   transition: 0.3s;
+ }
+
+ .formButton:hover {
+   background-color: #1B1B22;
+ }
+}
+
+.passwordForgot {
+  text-align: left;
+
+  .links {
+    text-align: center;
+  }
+}

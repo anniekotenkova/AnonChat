@@ -1,0 +1,250 @@
+@import './_mixins';
+@import './_styles';
+
+
+
+.messagePage {
+  width: 100%;
+
+  .header{
+    display: flex;
+    margin: 60px 0;
+
+    a {
+      text-decoration: none;
+    }
+
+    .headerWidget {
+      width: 383px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      margin-top: 20px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: #FFFFFF;
+      box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04),
+                  0px 2px 4px rgba(96, 97, 112, 0.16);
+
+      .devider {
+          margin: 0 15px 0 0;
+          width: 1px;
+          background-color: rgba(2, 2, 9, 0.1);
+          height: 60px;
+      }
+
+      .closeButton {
+        border: none;
+        outline: none;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+
+        .iconButton {
+          width: 24px;
+          height: 24px;
+          margin-left: 4px;
+          background-image: url('Stop.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .timer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+
+        .identifyEmoji {
+          margin-right: 15px;
+          width: 52px;
+          height: 52px;
+          background-color: #FFEAEE;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .GenerateEmoji {
+            width: 52px;
+            height: 52px;
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .countdown {
+          width: 95px;
+
+          p {
+            margin: 0;
+          }
+
+          .time {
+            font-size: 30px;
+            font-weight: 400;
+          }
+
+          .sign {
+            font-size: 14px;
+            color: rgba(20, 20, 20, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .channelContainer {
+    height: 73vh;
+    overflow: scroll;
+
+    .channelСontent {
+      z-index: -10;
+
+      .messageBox {
+        margin-bottom: 15px;
+
+
+        .messageContainer {
+          background-color: rgba(20, 20, 20, 0.04);
+          border-radius: 20px 20px 20px 0;
+          margin: 0;
+          width: fit-content;
+
+          p {
+            padding: 16px;
+            margin: 0;
+          }
+        }
+
+        .messageTime {
+          margin-top: 10px;
+          color: rgba(20, 20, 20, 0.5);
+          font-size: 12px;
+        }
+      }
+    }
+
+    .messageBox.currentMember {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .messageContainer {
+        background-color: $SecondaryColor;
+        color: #FFFFFF;
+        border-radius: 20px 20px 0 20px;
+        margin: 0;
+        width: fit-content;
+
+        p {
+          padding: 16px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .channelContainer::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+}
+
+.messaging-wrapper {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  // flex-direction: column;
+  height: calc(100vh - 25px);
+}
+
+
+
+
+.MessageInput {
+  width: 60%;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 20px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04),
+              0px 2px 4px rgba(96, 97, 112, 0.16);
+
+  .emojiPicker {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .formndBtns {
+    background-color: rgba(20, 20, 20, 0.04);
+    border-radius: 24px;
+    height: 48px;
+    margin: 16px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    form {
+
+      .inputForm {
+        display: flex;
+        width: 100%;
+
+        .formControl {
+          width: 100%;
+          height: 48px;
+          border-radius: 24px;
+          text-decoration: none;
+          border: none;
+          outline: none;
+          background-color: rgba(20, 20, 20, 0);
+          padding: 0 28px;
+        }
+      }
+    }
+
+    .buttonForm {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .emojiButton {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-image: url('Emoji.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .enterButton {
+        margin-left: 20px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-image: url('Send.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: $SecondaryColor;
+      }
+    }
+  }
+
+}

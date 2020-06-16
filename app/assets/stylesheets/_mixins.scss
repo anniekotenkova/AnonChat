@@ -1,0 +1,35 @@
+@import '_styles';
+
+@mixin header {
+  font-size: 40px;
+  font-family: 'PT Russia Text', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+@mixin formControl {
+  width: 90%;
+  height: 46px;
+  border: 1px solid rgba(20, 20, 20, 0.10);
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border-radius: 23px;
+  margin: 8px 0;
+  padding: 0 20px;
+  outline: none;
+}
+
+@mixin formButton {
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #FFFFFF;
+  background-color: $PrimaryColor;
+  border-radius: 15px;
+  margin: 32px 0 20px 0;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}

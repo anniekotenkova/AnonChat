@@ -1,0 +1,1 @@
+{"ast":null,"code":"import '../chat';","map":{"version":3,"sources":["/Users/kotya/SMBD3/app/javascript/packs/chat.js"],"names":[],"mappings":"AAAA,OAAO,SAAP","sourcesContent":["import '../chat';\n"]},"metadata":{},"sourceType":"module"}

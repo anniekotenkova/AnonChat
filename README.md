@@ -1,10 +1,18 @@
-# README
 
-To try it out you only need to `clone` the project, run `bundle install` and rake `db:create db:migrate`.
-After that you can run rails server and you are good to go.
+# React + Redux + Rails Chat App
 
-* Ruby version
-`2.4.1`
+Chat your heart away! You need to sign up first though....
 
-* Rails version
-`5.0.2`
+ Built with:
+
+- React, ReactDOM
+- Redux, React-Redux
+- React-Router-DOM
+- Rails 6
+- Webpack
+- Babel with es2015 and react presets
+
+Eventually plan to add in Action Cable.
+
+Template courtesy of [here](https://github.com/lewagon/rails-templates), created by the [Le Wagon](https://www.lewagon.com) team.
+

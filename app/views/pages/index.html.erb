@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="logo">
+    <%= image_tag ( "LOGO.svg") %>
+  </div>
+  <div class="widget">
+    <% if user_signed_in? %>
+      <%= link_to 'Выйти', destroy_user_session_path, method: 'delete'%>
+      <%= image_tag ( "Sign-out.svg") %>
+    <% else %>
+      <%= link_to "Войти", new_user_session_path %>
+    <% end %>
+  </div>
+</div>
+<section class="welcomeText">
+
+  <h2>Ваша беседа закончена. <br> Хотите продолжить общаться?</h2>
+
+  <div class="actions">
+     <%= link_to 'Начать новую беседу!', channels_path , class: "formButton"%>
+  </div>
+</section>

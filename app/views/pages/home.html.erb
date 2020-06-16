@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="logo">
+    <%= image_tag ( "LOGO.svg") %>
+  </div>
+  <div class="widget">
+    <% if user_signed_in? %>
+      <%= link_to 'Выйти', destroy_user_session_path, method: 'delete'%>
+      <%= image_tag ( "Sign-out.svg") %>
+    <% else %>
+      <%= link_to "Войти", new_user_session_path %>
+    <% end %>
+  </div>
+</div>
+
+<section class="welcomeText">
+  <h2>Привет, незнакомец!</h2>
+
+  <%= image_tag ( "tutorial.svg") %>
+
+  <p>Анонимный чат SMBD позволяет знакомиться с&nbspновыми людьми и&nbspобсуждать самые разнообразные и&nbspволнующие тебя тебя темы, оставаясь при этом неизвестным для собеседника.
+    Есть одно&nbspно. У&nbspсобеседников есть только  15&nbspминут на&nbspразговор.</p>
+
+    <div class="actions">
+       <%= link_to 'Начать новую беседу!', channels_path , class: "formButton"%>
+    </div>
+
+
+</section>

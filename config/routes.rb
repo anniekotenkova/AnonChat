@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  mount ActionCable.server => '/cable'
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :channels, only: [] do
+        resources :messages, only: [ :index, :create ]
+      end
+    end
+  end
 
-  resources :chat_rooms, only: [:new, :create, :show, :index]
-  root 'chat_rooms#index'
+  resources :pages
+  resources :channels, only: [ :show, :index]
+  root to: 'pages#home'
 end
