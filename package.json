@@ -12,7 +12,7 @@
     "emoji-mart": "^3.0.0",
     "emoji-picker-react": "^3.2.1",
     "jquery": "^3.5.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "popper.js": "^1.16.0",
     "prop-types": "^15.7.2",
     "random-emoji": "^1.0.2",
